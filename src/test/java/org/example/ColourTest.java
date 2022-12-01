@@ -79,6 +79,32 @@ public class ColourTest {
         Assertions.assertTrue(Colour.Maximum * (1.0 + r) / 2 >= orange.getRed());
     }
 
+    @Test
+    //If variable r, g,b is getting converted in to getGreen correctly
+    //Took yellow as a random example, tests if it works
+
+    public void greenRandomArgumentsConstructorsTest() {
+        double r = 1.0;
+        double g = 1.0;
+        double b = 1.0;
+        Colour yellow = new Colour(r, g, b);
+        Assertions.assertTrue(Colour.Maximum * g / 2 <= yellow.getGreen());
+        Assertions.assertTrue(Colour.Maximum * (1.0 + g) / 2 >= yellow.getGreen());
+    }
+
+    @Test
+
+    //If variable r, g,b is getting converted in to getBlue correctly
+    //Took Turquoise as a random example, tests if it works
+
+    public void blueRandomArgumentsConstructorsTest() {
+        double r = 0.188;
+        double g = 0.835;
+        double b = 0.8;
+        Colour turquoise = new Colour(r, g, b);
+        Assertions.assertTrue(Colour.Maximum * r / 2 <= turquoise.getRed());
+        Assertions.assertTrue(Colour.Maximum * (1.0 + r) / 2 >= turquoise.getRed());
+    }
 
 
 
