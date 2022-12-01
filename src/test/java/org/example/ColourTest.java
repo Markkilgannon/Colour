@@ -55,6 +55,16 @@ public class ColourTest {
         Assertions.assertEquals(Colour.Maximum, white.getGreen());
     }
 
+    @Test
+
+    //Test should pass if getBlue can handle these values
+    //1.0 1.0 1.0 is a representation of white
+
+    public void OnesTestBlue() {
+        Colour white = new Colour(1.0, 1.0, 1.0);
+        Assertions.assertEquals(Colour.Maximum, white.getBlue());
+    }
+
 
 
 
