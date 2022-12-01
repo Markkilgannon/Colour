@@ -24,4 +24,18 @@ public class ColourTest {
         Colour black = new Colour(0.0, 0.0, 0.0);
         Assertions.assertEquals(0, black.getGreen());
     }
+
+    @Test
+
+    //Test should pass if getBlue can handle these values
+    //Black is a representation of no colour
+
+
+    public void zeroTestBlue() {
+        Colour black = new Colour(0.0, 0.0, 0.0);
+        Assertions.assertEquals(0.0, black.getBlue());
+    }
+
+
+
 }
