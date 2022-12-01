@@ -106,6 +106,15 @@ public class ColourTest {
         Assertions.assertTrue(Colour.Maximum * (1.0 + r) / 2 >= turquoise.getRed());
     }
 
+    //Test should pass if colours black and white are not considered equal
+    //reading two colours that are different and testing if they are not equal
+    @Test
+    public void differentColoursEqualsTest() {
+        Colour black = new Colour(0, 0, 0);
+        Colour white = new Colour(1.0, 1.0, 1.0);
+        Assertions.assertNotEquals(black, white);
+    }
+
 
 
 }
