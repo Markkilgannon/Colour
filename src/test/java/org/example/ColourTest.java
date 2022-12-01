@@ -136,7 +136,15 @@ public class ColourTest {
         Assertions.assertNotEquals(randomColour1, randomColour2);
     }
 
-
+    //Test should pass if colours are not equal
+    //reading two colours that are different and testing if they are not equal
+    //Looking at specifically blue
+    @Test
+    public void differentBlueEqualsTest() {
+        Colour randomColour1 = new Colour(1.0, 1.0, 1.0);
+        Colour randomColour2 = new Colour(1.0, 1.0, 0.0);
+        Assertions.assertNotEquals(randomColour1, randomColour2);
+    }
 
 
 }
